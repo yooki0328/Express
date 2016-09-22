@@ -1,5 +1,4 @@
 var express= require('express')
-var utility= require('utility')
 var superAgent= require('superagent')
 var cheerio = require('cheerio')
 var app = express()
@@ -34,7 +33,7 @@ app.get('/',function(req,res,next){
         }
     })
 })
-app.listen(3002,function(req,res){
+app.listen(3000,function(req,res){
     console.log('app is running at port 3000')
 })
 
