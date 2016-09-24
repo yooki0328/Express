@@ -1,0 +1,12 @@
+<%include ./base/head.ejs%>
+<%-locals.message%>
+<%if(!locals.user){%>
+    <h1 class="text-info">please login first</h1>
+    <a href='/login' class="text-muted">登录</a>
+    <a href='/register' class="text-muted">注册</a>
+<%}else{%>
+    <h1 class="text-success">welcome !<%=user%></h1>
+<%}%>
+</body>
+</html>
+

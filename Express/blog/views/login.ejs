@@ -1,0 +1,36 @@
+<%include ./base/head.ejs%>
+<%-locals.message%>
+    <div class="container">
+        <form role="form" class="form-horizontal col-md-4" method="post" action="/login">
+            <fieldset>
+            <legend>登录</legend>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="请输入用户名" name="username"></input>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </span>
+                    <input type="password" class="form-control" placeholder="请输入密码" name="password"></input>
+                </div>
+            </div>
+                <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" >登录</button>
+                </div>
+                <div class="form-group">
+                        <button type="button" class="btn btn-info col-sm-2 col-sm-offset-8" id="register">注册</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript" src="Javascript/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="Javascript/submit.js"></script>
+
+</body>
+</html>
