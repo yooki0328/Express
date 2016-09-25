@@ -6,6 +6,13 @@ var Schema = mongoose.Schema
 })*/
 var userSchema =new Schema({
 	username:String,
-	password:String
+	password:String,
+})
+var articleSchema= new Schema({
+	author:String,
+	title:String,
+	time:String,
+	content:String
 })
 exports.user = db.model('users',userSchema)
+exports.article = db.model('article',articleSchema)

@@ -1,0 +1,20 @@
+body{
+	margin: 0px;
+}
+.aside_left{
+	margin-top: 250px;
+}
+.article-list{
+	margin-top:100px;
+}
+.article{
+	margin-top: 20px;
+	height: 200px;
+	overflow-y: hidden; 
+}
+.art_info{
+	margin-top: 10px;
+}
+.content{
+	margin-top: 10px;
+}
