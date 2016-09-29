@@ -12,6 +12,13 @@ body{
 	height: 200px;
 	overflow-y: hidden; 
 }
+.article a{
+    text-decoration:none;
+    margin-right:1em;
+}
+.article a:hover{
+    color:#31780f;
+}
 .art_info{
 	margin-top: 10px;
 }
