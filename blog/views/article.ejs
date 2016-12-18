@@ -1,0 +1,14 @@
+<%include ./base/head.ejs%>
+<div class=" col-sm-10">
+<span class="h2 text-info col-sm-12 text-center"><%=art.title%></span>
+<div class="art_info text-center text-muted"><a href="/a/<%=art.author%>" class="text-muted">author:<%=art.author%></a>|date:<%=art.time%></div>
+<div class="content">
+    <%=art.content%>
+</div>
+<%if(locals.user===art.author){%>
+<div class="text-right text-warning">
+<a href="/edit/<%=art.title%>/<%=art.author%>/<%=art.time%>" class="text-warning">Edit</a>&nbsp
+<a href="/remove/<%=art.title%>/<%=art.author%>/<%=art.time%>" class="text-warning">Remove</a></div>
+</div>
+<%}%>
+<%include ./base/foot.ejs%>

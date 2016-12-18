@@ -1,0 +1,20 @@
+<%include ./base/head.ejs%>
+
+<div class="h1">Home</div>
+<div class="col-sm-10 article-list">
+<%if(data){%>
+<%data.forEach(function(art,index){%>
+
+<div class="article">
+<span class="h3 text-info"><a href="/t/<%=art.title%>/<%=art.author%>/<%=art.time%>"><%=art.title%></a></span>
+
+<div class="art_info"><a href="/a/<%=art.author%>">author:<%=art.author%></a>|date:<%=art.time%></div>
+<div class="content">
+	<%=art.content%>
+</div>
+</div>
+<%})%>
+<%}%>	
+
+<%include ./base/foot.ejs%>
+

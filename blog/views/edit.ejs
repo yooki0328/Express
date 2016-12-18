@@ -1,0 +1,21 @@
+<%include ./base/head.ejs%>
+    
+     <form role="form" class="form-horizontal col-sm-10" method="post" action="/post/<%=art._id%>">
+            <fieldset>
+            <div class="input-group col-sm-10">
+                <span class="text-muted">标题:</span>
+                <input type="text" class="form-control" name="title" value="<%=art.title%>" readOnly="true">
+            </div>
+            <div class="input-group col-sm-10">
+                <span class="text-muted">正文:</span>
+                <textarea class="form-control"  name="content" style="margin: 0px; width: 766px; height: 387px;">
+                    <%=art.content%>
+                </textarea>
+            </div> 
+            <div class="btn-group ">
+                <button type="submit" class="btn btn-info  ">确定</button>
+                <button type="button" class="btn btn-info  ">取消</button>
+            </div>
+            </fieldset>
+        </form>
+<%include ./base/foot.ejs%>

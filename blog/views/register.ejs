@@ -1,0 +1,32 @@
+<%include ./base/head.ejs%>
+        <form role="form" class="form-horizontal col-md-4" method="post" action="/register">
+            <fieldset>
+            <legend>注册</legend>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="请输入用户名" name="username"></input>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </span>
+                    <input type="password" class="form-control" placeholder="请输入密码" name="password"></input>
+                </div>
+            </div>
+
+                <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" >注册</button>
+                </div>
+                <div class="form-group">
+                        <button type="button" class="btn btn-info col-sm-2 col-sm-offset-8" id="login">登录</button>
+                </div>
+                
+            </div>
+            </fieldset>
+        </form>
+<%include ./base/foot.ejs%>
